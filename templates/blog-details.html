@@ -62,8 +62,6 @@
                  </div>
                </div>
               </div>
-
-
               <div class="comments-area">
                 <h4>{{ post.comments|length }} Comments</h4>
                 {% for comment in post.comments %}
@@ -72,12 +70,10 @@
                       <div class="user justify-content-between d-flex">
                         <div class="desc">
                           <h5><a href="#">{{ comment.author }}</a></h5>
-                            <p class="date">{{ comment.published_at }}</p>
-                            <p class="comment">
-                              {{ comment.text }}
-                            </p>
-                          </div>
+                          <p class="date">{{ comment.published_at }}</p>
+                          <p class="comment">{{ comment.text }}</p>
                         </div>
+                      </div>
                       <div class="reply-btn">
                         <a href="" class="btn-reply text-uppercase">reply</a>
                       </div>
@@ -86,9 +82,7 @@
                 {%  endfor %}
               </div>
         </div>
-
-
-          <!-- Start Blog Post Siddebar -->
+        <!-- Start Blog Post Siddebar -->
         <div class="col-lg-4 sidebar-widgets">
           <div class="widget-wrap">
             <div class="single-sidebar-widget newsletter-widget">
@@ -101,14 +95,12 @@
               </div>
               <button class="bbtns d-block mt-20 w-100">Subcribe</button>
             </div>
-
-
             <div class="single-sidebar-widget post-category-widget">
               <h4 class="single-sidebar-widget" style="height:200px;">Здесь будет реклама</h4>
             </div>
           </div>
         </div>
-          <!-- End Blog Post Siddebar -->
+        <!-- End Blog Post Siddebar -->
       </div>
     </div>
   </section>
